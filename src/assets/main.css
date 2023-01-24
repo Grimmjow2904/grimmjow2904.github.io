@@ -12,3 +12,11 @@
   font-family: "Orbitron";
   src: url("/fonts/Orbitron-VariableFont_wght.ttf") ;
 }
+
+
+@layer base{
+
+h2{
+@apply text-2xl
+}
+}
