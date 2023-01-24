@@ -1,5 +1,5 @@
 {
-  "name": "portfolio",
+  "homepage": "https://grimmjow2904.github.io/",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -15,8 +15,10 @@
   "dependencies": {
     "gh-pages": "^5.0.0",
     "pinia": "^2.0.28",
+    "vee-validate": "^4.7.3",
     "vue": "^3.2.45",
-    "vue-router": "^4.1.6"
+    "vue-router": "^4.1.6",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.1.4",

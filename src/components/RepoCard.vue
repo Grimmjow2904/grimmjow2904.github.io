@@ -1,6 +1,6 @@
 <template>
   <div
-    class="border-2 bg-white font-orbitron transition-all hover:-translate-y-6 hover:shadow-lg"
+    class="rounded-md border-2 bg-primary font-orbitron transition-all hover:-translate-y-6 hover:shadow-lg dark:bg-d_primary"
   >
     <h2 class="text-center uppercase">{{ repo.repoName }}</h2>
     <img class="py-3" :src="`/img/${repo.repoName}.png`" />
