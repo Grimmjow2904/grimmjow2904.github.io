@@ -3,7 +3,7 @@
     class="border-2 bg-white font-orbitron transition-all hover:-translate-y-6 hover:shadow-lg"
   >
     <h2 class="text-center uppercase">{{ repo.repoName }}</h2>
-    <img class="py-3" :src="`/img/${repo.repoName}.png`" />
+    <img class="py-3" :src="`/${repo.repoName}/img/${repo.repoName}.png`" />
 
     <h3 class="p-2">Lenguajes :</h3>
     <div class="grid grid-cols-3 gap-4 py-3">
