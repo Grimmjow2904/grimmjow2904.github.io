@@ -1,9 +1,9 @@
 {
   "name": "portfolio",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
-    "deploy": "node scripts/gh-pages-deploy.js",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "run-p type-check build-only",
     "preview": "vite preview",
@@ -13,12 +13,12 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "gh-pages": "^5.0.0",
     "pinia": "^2.0.28",
     "vue": "^3.2.45",
     "vue-router": "^4.1.6"
   },
   "devDependencies": {
-    "execa": "latest",
     "@rushstack/eslint-patch": "^1.1.4",
     "@types/jsdom": "^20.0.1",
     "@types/node": "^18.11.12",
