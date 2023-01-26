@@ -1,18 +1,16 @@
 <template>
   <section
-    class="flex h-screen snap-start flex-col items-center justify-center"
+    class="flex h-screen snap-start snap-always flex-col items-center justify-center"
   >
-    <div v-motion="fade" class="flex flex-col items-center justify-center">
-      <h1 class="text-center font-bold uppercase">
+    <div v-motion="fade" class="flex flex-col items-center justify-center p-4">
+      <h1 class="py-4 text-center font-bold uppercase">
         Alexander <br />
         Amion
       </h1>
       <h2 class="uppercase">I am a Freelance Developer</h2>
-      <p class="w-full p-4 text-justify">
+      <p class="w-full text-justify">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus soluta
         quae magni expedita eos in harum molestias et nostrum placeat
-        praesentium doloribus est atque modi, numquam fuga consequatur tempora.
-        Dolore.
       </p>
     </div>
 

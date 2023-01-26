@@ -9,7 +9,7 @@ import TheFooter from "@/components/TheFooter.vue";
 
 <template>
   <div
-    class="relative h-screen snap-y snap-mandatory snap-always overflow-y-auto scroll-smooth bg-gradient-to-tr from-[#221717] via-[#152445] to-[#3a37dd]"
+    class="relative h-screen snap-y snap-mandatory overflow-y-auto scroll-smooth bg-gradient-to-tr from-[#221717] via-[#152445] to-[#3a37dd]"
   >
     <TheHeader />
     <TheBanner />

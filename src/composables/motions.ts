@@ -7,8 +7,8 @@ export const enterLeft = (delay: number) => ({
     opacity: 1,
     x: 0,
     transition: {
-      duration: 1500,
-      delay: delay * 200,
+      duration: 1000,
+      delay: delay * 100,
     },
   },
 });

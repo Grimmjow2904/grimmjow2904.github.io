@@ -1,7 +1,7 @@
 <template>
   <div class="group relative overflow-hidden rounded-md border-2 font-orbitron">
     <img
-      class="h-full transition-all duration-300 group-hover:scale-105 group-hover:blur-sm group-hover:brightness-50"
+      class="object-cover transition-all duration-300 group-hover:scale-105 group-hover:blur-sm group-hover:brightness-50"
       :src="`/img/${repo.repoName}.png`"
     />
     <div
