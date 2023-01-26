@@ -1,52 +1,21 @@
 <script setup lang="ts">
-import RepoCard from "@/components/RepoCard.vue";
-import { usePageStore } from "@/stores/page";
-import FormComponent from "@/components/FormComponent.vue";
-const store = usePageStore();
-
-store.getRepos();
+import TheHeader from "@/components/TheHeader.vue";
+import TheBanner from "@/components/TheBanner.vue";
+import TheServices from "@/components/TheServices.vue";
+import TheWorks from "@/components/TheWorks.vue";
+import TheContact from "@/components/TheContact.vue";
+import TheFooter from "@/components/TheFooter.vue";
 </script>
 
 <template>
-  <div class="bg-primary p-4 dark:bg-d_primary">
-    <section class="flex h-screen flex-col justify-center">
-      <h1 class="uppercase">Alexander</h1>
-      <h2 class="uppercase">Amion</h2>
-      <p class="my-8 w-4/6">
-        Hi, I'm a 28-year-old software developer from Habana, Cuba.
-      </p>
-
-      <button
-        class="self-start rounded-md border-2 border-decoration p-3 transition-all hover:bg-decoration"
-      >
-        <a href="http://"> Download Resume </a>
-      </button>
-    </section>
-
-    <section class="rounded-md bg-secundary p-4">
-      <h2>GitHub Projects</h2>
-      <div id="projects" class="grid grid-cols-3 gap-8 p-4 py-8">
-        <RepoCard
-          :repo="repo"
-          v-for="repo in store.repos"
-          :key="repo.repoName"
-        />
-        <RepoCard
-          :repo="repo"
-          v-for="repo in store.repos"
-          :key="repo.repoName"
-        />
-        <RepoCard
-          :repo="repo"
-          v-for="repo in store.repos"
-          :key="repo.repoName"
-        />
-        <RepoCard
-          :repo="repo"
-          v-for="repo in store.repos"
-          :key="repo.repoName"
-        />
-      </div>
-    </section>
+  <div
+    class="relative h-screen snap-y snap-mandatory snap-always overflow-y-auto scroll-smooth bg-gradient-to-tr from-[#221717] via-[#152445] to-[#3a37dd]"
+  >
+    <TheHeader />
+    <TheBanner />
+    <TheServices />
+    <TheWorks />
+    <TheContact />
+    <TheFooter />
   </div>
 </template>

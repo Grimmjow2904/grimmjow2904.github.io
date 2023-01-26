@@ -9,7 +9,7 @@ export const usePageStore = defineStore("page", () => {
     count.value++;
   }
   const repos = ref<Array<IRepo>>([]);
-  const dark = ref<Boolean>(false);
+  const dark = ref<Boolean>(true);
 
   //"https://api.github.com/users/Grimmjow2904
   function getRepos() {
