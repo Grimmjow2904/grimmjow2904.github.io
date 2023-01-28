@@ -1,7 +1,7 @@
 <template>
-  <div class="flex h-screen snap-start snap-always flex-col">
-    <div v-motion="enterRigth(1)" class="p-4">
-      <h1 class="py-5 uppercase">What I do</h1>
+  <section id="services" class="flex h-screen snap-start snap-always flex-col">
+    <div v-motion="enterRigth(1)" class="mt-12 p-4">
+      <h1 class="observable py-5 uppercase">What I do</h1>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum eveniet id
       </p>
@@ -23,7 +23,7 @@
         </p>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script setup lang="ts">

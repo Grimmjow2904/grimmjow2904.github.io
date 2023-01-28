@@ -1,37 +1,47 @@
 <template>
-  <div class="flex h-screen snap-start snap-always flex-col">
-    <div v-motion="enterRigth(1)" class="p-4">
-      <h1 class="py-5 uppercase">My latest work</h1>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum eveniet id
-      </p>
-      <button class="btn my-5">View all projects</button>
+  <section id="work" class="flex h-screen snap-start snap-always flex-col">
+    <div v-motion="enterRigth(1)" class="mt-20 px-4">
+      <h1 class="observable my-2 uppercase">My works</h1>
+      <p>I work as a developer since 2021.Here are some of my works.</p>
+      <button class="btn mt-2">
+        <a class=" " href="https://github.com/Grimmjow2904/">
+          View all projects
+        </a>
+      </button>
     </div>
-    <div class="grid flex-1 gap-6 p-4">
+    <div class="grid flex-1 gap-3 p-4">
       <RepoCard
         v-motion="enterLeft(index)"
-        :repo="repo"
-        v-for="(repo, index) in store.repos"
-        :key="index"
-      />
-      <RepoCard
-        v-motion="enterLeft(index)"
-        :repo="repo"
-        v-for="(repo, index) in store.repos"
+        :repo="work"
+        v-for="(work, index) in works"
         :key="index"
       />
     </div>
-  </div>
+  </section>
 </template>
 
 <script setup lang="ts">
 import RepoCard from "@/components/RepoCard.vue";
-import { usePageStore } from "@/stores/page";
 import { enterLeft, enterRigth } from "@/composables/motions";
+import { ref } from "vue";
 
-const store = usePageStore();
+import type IWork from "@/types/IWork";
 
-store.getRepos();
+const works = ref<IWork[]>([
+  {
+    name: "Go Travel & Tours",
+    url: "http://gotravelandtours.com/#/",
+    description: "Travel and rent agency",
+    img: "Gotravel",
+  },
+  {
+    name: "Portfolio",
+    url: "https://grimmjow2904.github.io/",
+    description: "My portfolio web page",
+    repo: "https://github.com/Grimmjow2904/grimmjow2904.github.io",
+    img: "Gotravel",
+  },
+]);
 </script>
 
 <style scoped></style>
