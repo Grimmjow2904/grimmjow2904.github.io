@@ -5,7 +5,7 @@
       :src="`/img/${repo.img}.png`"
     />
     <div
-      class="absolute bottom-0 w-full translate-y-full p-8 transition-all duration-500 group-hover:translate-y-0"
+      class="absolute bottom-0 w-full translate-y-full p-5 transition-all duration-500 group-hover:translate-y-0"
     >
       <h3 class="py-3 font-orbitron font-bold">{{ repo.name }}</h3>
 

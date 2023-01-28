@@ -1,7 +1,7 @@
 <template>
   <section id="work" class="flex h-screen snap-start snap-always flex-col">
     <div v-motion="enterRigth(1)" class="mt-20 px-4">
-      <h1 class="observable my-2 uppercase">My works</h1>
+      <h1 class="my-2 uppercase">My works</h1>
       <p>I work as a developer since 2021.Here are some of my works.</p>
       <button class="btn mt-2">
         <a class=" " href="https://github.com/Grimmjow2904/">

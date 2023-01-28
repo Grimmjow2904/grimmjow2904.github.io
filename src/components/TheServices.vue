@@ -1,25 +1,26 @@
 <template>
   <section id="services" class="flex h-screen snap-start snap-always flex-col">
     <div v-motion="enterRigth(1)" class="mt-12 p-4">
-      <h1 class="observable py-5 uppercase">What I do</h1>
+      <h1 class="py-5 uppercase">What I do</h1>
       <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum eveniet id
+        I'm a Software Engineer with experience as a web developer. I specialize
+        in building web applications using the Vue.js framework.
       </p>
-      <button class="btn my-6">See my work</button>
+      <button class="btn mt-3">See my work</button>
     </div>
-    <div class="grid flex-1 p-4">
+    <div class="grid flex-1 px-4">
       <div
         v-motion="enterLeft(index)"
         v-for="(ser, index) in services"
         :key="index"
-        class="gap-4"
+        class="gap-2"
       >
         <h2 class="py-4">
           {{ ser.name }}
         </h2>
 
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+          {{ ser.description }}
         </p>
       </div>
     </div>
@@ -28,7 +29,6 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
-
 import { enterLeft, enterRigth } from "@/composables/motions";
 
 export interface service {
@@ -39,11 +39,13 @@ export interface service {
 const services = ref<service[]>([
   {
     name: "Development",
-    description: "sdasdasdasd",
+    description:
+      "Frontend programing lenguages as HTML,CSS and JavaScript.Vue.js framework using the CompositionAPI.",
   },
   {
-    name: "otro",
-    description: "asdasdasdasdas",
+    name: "Testing and Debugging",
+    description:
+      "Continuously test the webpage for any possible errors. Should any arise,  know how to debug it. Making sure the code is doing what it's supposed to do.",
   },
 ]);
 </script>

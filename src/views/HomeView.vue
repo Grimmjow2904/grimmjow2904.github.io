@@ -22,7 +22,6 @@ onMounted(() => {
     {
       root: document.querySelector("#observer-root"),
       threshold: 1.0,
-      // rootMargin: "0px 0px -30% 0px",
     }
   );
 

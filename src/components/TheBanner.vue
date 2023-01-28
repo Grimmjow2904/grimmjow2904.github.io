@@ -8,14 +8,14 @@
         v-motion="fade"
         class="flex flex-col items-center justify-center p-4"
       >
-        <h1 class="observable py-4 text-center font-bold uppercase">
-          Alexander <br />
-          Amion
+        <h1 class="py-4 text-center font-bold uppercase">
+          Hey, I'm <br />
+          Alex
         </h1>
-        <h2 class="uppercase">I am a Freelance Developer</h2>
-        <p class="w-full py-3 text-start md:w-2/3">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus soluta
-          quae magni expedita eos in harum molestias et nostrum placeat
+        <h2 class="font-orbitron uppercase">I make websites.</h2>
+        <p class="w-full py-5 text-start md:w-2/3">
+          I’m a front-end developer. I like drawing, sci-fi, reading, and
+          gaming. Now that you are here, how about checking some of my works?
         </p>
       </div>
 
