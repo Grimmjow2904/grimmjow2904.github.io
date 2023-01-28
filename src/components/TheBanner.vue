@@ -34,19 +34,13 @@
         }"
         class="flex w-full justify-around py-10"
       >
-        <button class="btn">Contact me</button>
+        <button class="btn md:text-lg">Contact me</button>
         <button
-          class="bg-gradient-to-l from-[#159957] to-[#155799] bg-clip-text text-transparent transition-all hover:scale-125"
+          class="bg-gradient-to-l from-[#159957] to-[#155799] bg-clip-text text-transparent transition-all hover:scale-125 md:text-lg"
         >
           My Portfolio
         </button>
       </div>
-    </div>
-    <div class="hidden h-2/5 w-1/3 items-center justify-center px-10 md:flex">
-      <div
-        class="h-full w-full overflow-hidden"
-        style="border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%"
-      ></div>
     </div>
   </section>
 </template>

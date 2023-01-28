@@ -1,25 +1,33 @@
 <template>
-  <section id="services" class="flex h-screen snap-start snap-always flex-col">
-    <div v-motion="enterRigth(1)" class="mt-12 p-4">
+  <section
+    id="services"
+    class="flex h-screen snap-start snap-always flex-col justify-center md:flex-row"
+  >
+    <div
+      v-motion="enterRigth(1)"
+      class="mt-12 p-4 md:flex md:w-1/3 md:flex-col md:justify-center"
+    >
       <h1 class="py-5 uppercase">What I do</h1>
-      <p>
+      <p class="md:py-6 md:text-2xl">
         I'm a Software Engineer with experience as a web developer. I specialize
         in building web applications using the Vue.js framework.
       </p>
-      <button class="btn mt-3">See my work</button>
+      <button class="btn mt-3 md:w-2/4 md:text-lg">See my work</button>
     </div>
-    <div class="grid flex-1 px-4">
+    <div
+      class="grid flex-1 gap-3 p-4 md:mt-28 md:mb-4 md:w-1/3 md:flex-none md:p-4"
+    >
       <div
         v-motion="enterLeft(index)"
         v-for="(ser, index) in services"
         :key="index"
-        class="gap-2"
+        class="flex flex-col justify-center rounded-md border-b-2 md:p-4"
       >
-        <h2 class="py-4">
+        <h2 class="py-2">
           {{ ser.name }}
         </h2>
 
-        <p>
+        <p class="md:text-xl">
           {{ ser.description }}
         </p>
       </div>
