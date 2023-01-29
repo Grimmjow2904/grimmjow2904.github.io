@@ -1,6 +1,6 @@
 {
   "homepage": "https://grimmjow2904.github.io/",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "deploy": "gh-pages -d dist",

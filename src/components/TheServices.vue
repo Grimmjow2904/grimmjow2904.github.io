@@ -15,13 +15,13 @@
       <button class="btn mt-3 md:w-2/4 md:text-lg">See my work</button>
     </div>
     <div
-      class="grid flex-1 gap-3 p-4 md:mt-28 md:mb-4 md:w-1/3 md:flex-none md:p-4"
+      class="grid flex-1 gap-3 p-4 md:mt-28 md:mb-4 md:w-2/5 md:flex-none md:p-4"
     >
       <div
         v-motion="enterLeft(index)"
         v-for="(ser, index) in services"
         :key="index"
-        class="flex flex-col justify-center rounded-md border-b-2 md:p-4"
+        class="flex flex-col justify-evenly rounded-md border-b-2 md:p-4"
       >
         <h2 class="py-2">
           {{ ser.name }}
@@ -53,7 +53,7 @@ const services = ref<service[]>([
   {
     name: "Testing and Debugging",
     description:
-      "Continuously test the webpage for any possible errors. Should any arise,  know how to debug it. Making sure the code is doing what it's supposed to do.",
+      "Continuously test the webpage for any possible errors. Making sure the code is doing what it's supposed to do.",
   },
 ]);
 </script>

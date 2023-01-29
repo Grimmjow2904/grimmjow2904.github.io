@@ -44,11 +44,10 @@ const {
 </script>
 
 <template>
-  <div
-    class="relative"
-    :class="{ 'has-error': !!errorMessage, success: meta.valid }"
-  >
-    <label class="absolute top-2 left-2 text-sm" :for="name">{{ label }}</label>
+  <div class="relative">
+    <label class="absolute top-2 left-0 text-sm md:text-base" :for="name">{{
+      label
+    }}</label>
     <input
       :name="name"
       :id="name"
@@ -57,11 +56,7 @@ const {
       :placeholder="placeholder"
       @input="handleChange"
       @blur="handleBlur"
-      class="h-16 w-full border-black bg-slate-200 pt-6 outline-none transition-all hover:border-b-2"
+      class="w-full border-b-2 bg-transparent pt-8 outline-none transition-all hover:border-b-2 md:text-xl"
     />
-
-    <p class="absolute top-0 right-0" v-show="errorMessage || meta.valid">
-      {{ errorMessage || "exitoF" }}
-    </p>
   </div>
 </template>

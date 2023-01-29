@@ -5,7 +5,7 @@
   >
     <div
       v-motion="enterRigth(1)"
-      class="mt-20 p-4 md:flex md:w-1/3 md:flex-col md:justify-center"
+      class="mt-12 p-4 md:flex md:w-1/3 md:flex-col md:justify-center"
     >
       <h1 class="py-5 uppercase">My works</h1>
       <p class="md:py-6 md:text-2xl">
@@ -18,7 +18,7 @@
       </button>
     </div>
     <div
-      class="grid flex-1 gap-3 p-4 md:mt-28 md:mb-4 md:w-1/3 md:flex-none md:p-4"
+      class="grid flex-1 gap-3 p-4 md:mt-40 md:mb-4 md:w-1/3 md:flex-none md:p-4"
     >
       <RepoCard
         v-motion="enterLeft(index)"

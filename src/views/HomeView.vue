@@ -43,6 +43,5 @@ onMounted(() => {
     <TheServices />
     <TheWorks />
     <TheContact />
-    <TheFooter />
   </div>
 </template>

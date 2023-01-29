@@ -13,7 +13,7 @@
           Alex
         </h1>
         <h2 class="font-orbitron uppercase">I make websites.</h2>
-        <p class="w-full py-5 text-start md:w-2/3">
+        <p class="w-full py-5 text-start md:w-2/3 md:text-lg">
           I’m a front-end developer. I like drawing, sci-fi, reading, and
           gaming. Now that you are here, how about checking some of my works?
         </p>
